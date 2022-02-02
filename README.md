@@ -8,7 +8,8 @@ Then the domains were cleaned and it's TLDs remove based on [IANAs TLD](https://
 The feature extraction was based on papers on [[2]](#2) which have three sets of features, lexical, ngram and imitation; On this repository, only lexical is used.<br>
 The training was initially done with [SKLearn](https://scikit-learn.org/), changing hiperparameters by hand, then, I discover [TPOT](https://epistasislab.github.io/tpot/), which is an AutoML that in essence, is a wrapper for scikit learn that preprocess and explore the grid of possibilities through tree based pipelining and genetic programming.<br>
 Finally, the evaluation of the predictors is done through commom metrics but, trained the TPOT uses the most appropriate for unbalanced data, balanced accuracy [[3]](#3).<br>
-Even exploring thousand of options the results are not promising once the distinction between classes cannot be achieve with so little information. <br>
+Even if explored a thousand of options as I once did, the results are not promising once the distinction between classes cannot be achieve with so little information. <br>
+
 
 ## Installation
 
