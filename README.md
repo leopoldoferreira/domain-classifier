@@ -1,6 +1,6 @@
 # domain-classifier
 
-This domain classifier is a short version of what I built on my master's degree which unfortunately I did not finished.
+This domain classifier is a short version of what I built on my master's degree experience (didnt finish due to personal issues).
 It was written in Python over Notebooks and showcase the process [[1]](#1) of an AI solution to classify malicious domains without it's [TLDs](https://en.wikipedia.org/wiki/Top-level_domain).<br>
 <br>
 - Data was gathered based on popular sources of public domains lists [[3]](#3).<br>
