@@ -1,13 +1,17 @@
 # domain-classifier
 
-This domain classifier was written in Python over Notebooks and showcase the process [[1]](#1) of an AI solution to classify malicious domains without it's [TLDs](https://en.wikipedia.org/wiki/Top-level_domain).<br>
+## Preface
+
+This domain classifier was written in Python over Notebooks, the process of creating this AI solution to classify malicious domains without it's [TLDs](https://en.wikipedia.org/wiki/Top-level_domain) followed the process of an academic research. The paper that guided the steps in which one should partake to make an AI solution was beatifully layout at [1] and it served as the guide for this work. As per KOTSIANTIS steps, the last iteration of trying to achieve a solution that works was done as follow:
+<br>
 <br>
 - Data was gathered based on popular sources of public domains lists [[3]](#3).<br>
 - Domains were cleaned and it's TLDs remove based on [IANAs TLD](https://www.iana.org/domains/root/db) and resonable deduction.<br>
 - Feature extraction was based on papers on [[2]](#2) which have three sets of features, lexical, ngram and imitation; On this repository, only lexical is used.<br>
 - Training was initially done with [SKLearn](https://scikit-learn.org/), changing hiperparameters by hand, then, I discover [TPOT](https://epistasislab.github.io/tpot/), which is an AutoML that in essence, is a wrapper for scikit learn that preprocess and explore the grid of possibilities through tree based pipelining and genetic programming.<br>
 Finally, the evaluation of the predictors is done through commom metrics but, trained the TPOT uses the most appropriate for unbalanced data, balanced accuracy [[3]](#3).<br>
-Even if explored a thousand of options as I once did, the results are not promising once the distinction between classes cannot be achieve with so little information. <br>
+<br>
+The conclusion unfortunetly was not promising, even if throughly explored, the results are not good since the distinction between classes cannot be achieve with so little information.<br>
 
 
 ## Installation
